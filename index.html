@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- Tip: place your hero image at `assets/hero.jpg` to replace the SVG placeholder -->
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav containern">
+      <ul class="nav-left">
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Commitments</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+
+      <div class="logo"><img src="http://monin1912.com/cdn/shop/files/logo-monin-white.svg?v=1758094828&width=352" alt="img"></div>
+
+      <ul class="nav-right">
+        <li><a href="#">Products &amp; Recipes</a></li>
+        <li><a href="#">Where To Buy</a></li>
+        <li class="icon"><button aria-label="Search" class="btn-icon"><img src="/assets/serach.svg" alt=""></button></li>
+        <li class="icon"><button aria-label="Language" class="btn-icon"><img src="https://monin1912.com/cdn/shop/t/29/assets/picto-world.svg" alt=""></button></li>
+        <li class="hamburger">
+          <button aria-label="Menu" id="menuToggle">☰</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-inner container">
+        <div class="since">SINCE</div>
+        <h1 class="year">1912</h1>
+
+        <div class="marker">
+          <span class="dot" aria-hidden="true"></span>
+          <div class="line horizontal" aria-hidden="true"></div>
+        </div>
+
+        <h2 class="tagline">WE ARE AN ICONIC FLAVOUR MANUFACTURER</h2>
+      </div>
+
+      <div class="language">
+        <button class="lang-btn">🇬🇧 English ▾</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="top-nav-area">
+    <svg class="curved-text-svg" viewBox="0 0 300 100">
+      <path id="curve" fill="transparent" d="M 20 80 Q 150 20 280 80" />
+      <text width="300">
+        <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle">
+          Flavours of the Month
+        </textPath>
+      </text>
+    </svg>
+    <div class="vertical-line"></div>
+  </div>
+
+  <div class="slider">
+    <!-- Slide 1: Blueberry -->
+    <div class="slide slide-blueberry active">
+      <div class="content-left">
+        <div class="text-wrapper">
+          <span class="brand-sub">LE FRUIT DE MONIN</span>
+          <h1 class="product-name">Blueberry</h1>
+          <div class="divider"></div>
+          <p class="description">No reason to be blue! The sweet, delicate flavour and subtle tartness of your favourite
+            tiny summer berries are now available year-round.</p>
+          <a href="#" class="btn-discover">DISCOVER</a>
+        </div>
+      </div>
+      <div class="content-right"  style="background-image: url(./assets/back1.png); background-repeat: no-repeat;background-size: cover ;"  ></div>
+      <img class="product-image" src="./assets/drink.png" alt="Blueberry">
+    </div>
+
+    <!-- Slide 2: Strawberry -->
+    <div class="slide slide-strawberry">
+      <div class="content-left">
+        <div class="text-wrapper">
+          <span class="brand-sub">LE FRUIT DE MONIN</span>
+          <h1 class="product-name">Green Melon</h1>
+          <div class="divider"></div>
+          <p class="description">The classic taste of summer. Picked at peak ripeness, our strawberry fruit mix delivers
+            a burst of juicy, sweet-tart flavor to every drink.</p>
+          <a href="#" class="btn-discover">DISCOVER</a>
+        </div>
+      </div>
+      <div class="content-right" style="background-image: url(./assets/backdrink.png);"></div>
+      <img class="product-image" src="./assets/drink2.png" alt="Strawberry">
+    </div>
+
+    <!-- Slide 3: Passion Fruit -->
+   
+    <div class="slider-controls">
+      <button class="control-btn prev">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+      <button class="control-btn next">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="container3">
+    <!-- Header Section -->
+    <div class="section-header">
+      <div class="line"></div>
+      <h2 class="section-title">Our Categories</h2>
+    </div>
+
+    <!-- Slider Main Viewport -->
+    <div class="slider-wrapper" id="slider">
+      <!-- Card 1 (Initial Big Div) -->
+      <div class="category-card card-sauce active " >
+        <h3 class="card-title">La Sauce</h3>
+        <img src="./assets/coco.png" alt="Sauce" class="product-img">
+      </div>
+
+      <!-- Card 2 -->
+      <div class="category-card card-cordial">
+        <h3 class="card-title">PARAGON Cordials</h3>
+        <img src="./assets/coco.png" alt="Cordial" class="product-img">
+      </div>
+
+      <!-- Card 3 -->
+      <div class="category-card card-sirop">
+        <h3 class="card-title">Le Sirop</h3>
+        <img src="./assets/coco.png" alt="Syrup" class="product-img">
+      </div>
+
+      <!-- Card 4 (Duplicate for loop feel) -->
+      <div class="category-card card-sauce">
+        <h3 class="card-title">Gourmet Mix</h3>
+        <img src="./assets/coco.png" alt="Sauce" class="product-img">
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="controls">
+      <button class="nav-btn" id="prevBtn">
+        <img src="https://monin1912.com/cdn/shop/t/29/assets/arrow-left-slider-black.svg" alt="">
+      </button>
+      <button class="nav-btn" id="nextBtn">
+        <img src="https://monin1912.com/cdn/shop/t/29/assets/arrow-right-slider-black.svg" alt="">
+      </button>
+    </div>
+  </div>
+
+  <section class="world-section" style="margin-top: 80px;">
+    <!-- Background decorative elements -->
+    <div class="topo-overlay"></div>
+    <div class="grid-line-v"></div>
+    <div class="grid-line-h"></div>
+
+    <!-- Left Top Location -->
+    <div class="location-label loc-top">
+      <span class="time">08:13am</span>
+      <h3 class="name">Clearwater</h3>
+    </div>
+
+    <!-- Central Content -->
+    <div class="center-content">
+      <!-- Curved Header -->
+      <div class="curved-text-container">
+        <svg viewBox="0 0 500 200">
+          <path id="curve" d="M 50,150 Q 250,50 450,150" fill="transparent" />
+          <text>
+            <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle">
+              MONIN'S WORLD
+            </textPath>
+          </text>
+        </svg>
+      </div>
+
+      <div class="tree-icon"></div>
+      <div class="vertical-divider"></div>
+
+      <p class="main-description">
+        As a family business and with our fellowship spirit. We inspire hospitality professionals from all over the
+        world
+      </p>
+
+      <a href="#" class="btn-partners">Find Partners</a>
+    </div>
+
+    <!-- Left Bottom Location -->
+    <div class="location-label loc-bottom">
+      <span class="time">02:13pm</span>
+      <h3 class="name">Bourges</h3>
+    </div>
+  </section>
+
+  <div class="monin-container">
+    <h2 class="monin-header">Fresh Monin News</h2>
+
+    <div class="monin-grid">
+      <button class="monin-btn monin-left" onclick="moninMove(-1)">&#8592;</button>
+      <button class="monin-btn monin-right" onclick="moninMove(1)">&#8594;</button>
+
+      <div class="monin-card">
+        <img class="monin-img">
+        <div class="monin-overlay">
+          <h3 class="monin-title"></h3>
+          <p class="monin-subtitle"></p>
+        </div>
+      </div>
+
+      <div class="monin-card">
+        <img class="monin-img">
+        <div class="monin-overlay">
+          <h3 class="monin-title"></h3>
+          <p class="monin-subtitle"></p>
+        </div>
+      </div>
+
+      <div class="monin-card">
+        <img class="monin-img">
+        <div class="monin-overlay">
+          <h3 class="monin-title"></h3>
+          <p class="monin-subtitle"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="hero-section" id="hero">
+    <div class="image-container">
+      <div class="text-overlay">
+        <h2 class="text-top">LIFE IS A</h2>
+        <h1 class="text-bottom">CREATIVE JOURNEY</h1>
+      </div>
+    </div>
+
+    <div class="divider-wrapper">
+      <div class="vertical-line"></div>
+      <div class="circle-dot"></div>
+    </div>
+
+    <a href="#" class="cta-button">Discover Our Vision</a>
+  </section>
+  <div class="container">
+    <!-- Header -->
+    <header class="social-header">
+      FOLLOW US <span>@MONIN_ASIA</span>
+    </header>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <div class="flex">
+
+    <article class="card">
+      <!-- Top Image -->
+      <div class="card-image-wrapper">
+        <!-- Using a representative high-quality stock photo of a barista/bartender -->
+        <img
+          src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Professional mixologist at work" class="card-image">
+      </div>
+
+      <!-- Content Area -->
+      <div class="card-content">
+        <!-- Grid Icon (SVG for perfect scaling) -->
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </div>
+
+        <!-- Description Text -->
+        <p class="card-description">
+          We foster relationships with local and extended communities, providing them with the needed support to make
+          a positive impact.
+        </p>
+      </div>
+
+    </article>
+
+ <article class="card">
+      <!-- Top Image -->
+      <div class="card-image-wrapper">
+        <!-- Using a representative high-quality stock photo of a barista/bartender -->
+        <img
+          src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Professional mixologist at work" class="card-image">
+      </div>
+
+      <!-- Content Area -->
+      <div class="card-content">
+        <!-- Grid Icon (SVG for perfect scaling) -->
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </div>
+
+        <!-- Description Text -->
+        <p class="card-description">
+          We foster relationships with local and extended communities, providing them with the needed support to make
+          a positive impact.
+        </p>
+      </div>
+
+    </article>
+
+
+
+    <article class="card">
+      <!-- Top Image -->
+      <div class="card-image-wrapper">
+        <!-- Using a representative high-quality stock photo of a barista/bartender -->
+        <img
+          src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Professional mixologist at work" class="card-image">
+      </div>
+
+      <!-- Content Area -->
+      <div class="card-content">
+        <!-- Grid Icon (SVG for perfect scaling) -->
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </div>
+
+        <!-- Description Text -->
+        <p class="card-description">
+          We foster relationships with local and extended communities, providing them with the needed support to make
+          a
+          positive impact.
+        </p>
+      </div>
+
+    </article>
+
+    <article class="card">
+      <!-- Top Image -->
+      <div class="card-image-wrapper">
+        <!-- Using a representative high-quality stock photo of a barista/bartender -->
+        <img
+          src="https://images.unsplash.com/photo-1570126646281-5ec88111777f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+          alt="Professional mixologist at work" class="card-image">
+      </div>
+
+      <!-- Content Area -->
+      <div class="card-content">
+        <!-- Grid Icon (SVG for perfect scaling) -->
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        </div>
+
+        <!-- Description Text -->
+        <p class="card-description">
+          We foster relationships with local and extended communities, providing them with the needed support to make
+          a
+          positive impact.
+        </p>
+      </div>
+
+    </article>
+
+
+
+  </div>
+ 
+    <footer class="monin-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Navigation Links -->
+                <nav class="links-grid">
+                    <a href="#">FAQ</a>
+                    <a href="#">Legal Notice</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact us</a>
+                </nav>
+
+                <!-- Copyright -->
+                <div class="footer-info">
+                    <p class="copyright">© 2026 Monin Incorporated. All right reserved</p>
+                </div>
+            </div>
+
+            <!-- Brand Logo -->
+            <div class="logo-container">
+                <svg class="footer-logo-svg" viewBox="0 0 100 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Stylized teardrop logo paths -->
+                    <path d="M80 60C80 85 60 105 40 105C20 105 10 85 10 60C10 35 40 5 80 60Z" fill="url(#paint0_linear)"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="10" y1="60" x2="80" y2="60" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#7B2C7F"/> <!-- Purple -->
+                            <stop offset="0.25" stop-color="#E13032"/> <!-- Red -->
+                            <stop offset="0.5" stop-color="#F39221"/> <!-- Orange -->
+                            <stop offset="0.75" stop-color="#EBC48F"/> <!-- Tan -->
+                            <stop offset="1" stop-color="#FFD100"/> <!-- Yellow -->
+                        </linearGradient>
+                    </defs>
+                    <!-- Slicing detail paths for that "leaf" look -->
+                    <path d="M78 58C78 58 65 65 40 105" stroke="#261608" stroke-width="1.5"/>
+                    <path d="M74 54C74 54 55 60 30 100" stroke="#261608" stroke-width="1.5"/>
+                    <path d="M68 50C68 50 45 55 20 90" stroke="#261608" stroke-width="1.5"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Watermark Background Text -->
+        <div class="footer-bg-text">MONIN</div>
+    </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

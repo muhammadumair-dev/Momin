@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5d7b7"/>
+      <stop offset="55%" stop-color="#e0b27a"/>
+      <stop offset="100%" stop-color="#6b5a3a"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1600" height="900" fill="url(#g1)" />
+
+  <!-- distant hills -->
+  <path d="M0 520 C200 460, 400 540, 600 500 C800 460, 1000 540, 1200 500 C1400 460, 1600 520, 1600 520 L1600 900 L0 900 Z" fill="#3b2e22" opacity="0.18"/>
+
+  <!-- fields -->
+  <path d="M0 620 C250 580, 350 660, 600 640 C850 620, 1050 700, 1400 660 L1600 700 L1600 900 L0 900 Z" fill="#2f2b20" opacity="0.22"/>
+
+  <!-- trees -->
+  <g fill="#1b170f" opacity="0.95">
+    <circle cx="180" cy="620" r="24"/>
+    <rect x="172" y="630" width="16" height="36" rx="3"/>
+
+    <circle cx="420" cy="640" r="30"/>
+    <rect x="412" y="650" width="16" height="40" rx="3"/>
+
+    <circle cx="1100" cy="620" r="28"/>
+    <rect x="1092" y="632" width="16" height="38" rx="3"/>
+
+    <circle cx="1320" cy="610" r="22"/>
+    <rect x="1314" y="620" width="12" height="30" rx="3"/>
+  </g>
+
+  <!-- subtle overlay -->
+  <rect width="1600" height="900" fill="url(#g2)" />
+
+</svg>
