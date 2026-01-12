@@ -88,18 +88,16 @@ const moninData = [
   {
     title: "MONIN Cup 2024 (AP)",
     subtitle: "*Timeless-Twists_",
-    img: "https://images.unsplash.com/photo-1551024709-8f23befc6f87"
+    img: "./assets/mominsimg1.png"
   },
   {
     title: "Refreshing Reinventions: Crafting the Perfect Lemonade",
     subtitle: "",
-    img: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd"
-  },
+  img: "./assets/mominsimg2.png"  },
   {
     title: "Mindful Mixology: Low to No-ABV",
     subtitle: "",
-    img: "https://images.unsplash.com/photo-1536935338788-846bb9981813"
-  },
+  img: "./assets/mominsimg3.png"  },
   {
     title: "Summer Flavors: Exotic Syrups",
     subtitle: "*Tropical-Vibes_",

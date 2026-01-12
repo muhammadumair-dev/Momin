@@ -360,9 +360,10 @@ body {
     background-color: var(--bg-light);
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: flex-end;
-    padding-right: 120px;
-    padding-left: 50px;
+    /* padding-right: 120px; */
+    /* padding-left: 50px; */
     z-index: 2;
 }
 
@@ -370,7 +371,6 @@ body {
     width: 50%;
     height: 100%;
     z-index: 1;
-    ;
     background-image: url(/assets/backdrink.png);
     transition: background 1s ease;
 
@@ -568,10 +568,11 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
 
 
-    justify-content: flex-start;
+    justify-content: flex-start;    
     padding-top: 60px;
     transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -638,16 +639,20 @@ background-repeat: no-repeat;
 
 .controls {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     /* Buttons ko right side karne ke liye */
     margin-top: 30px;
     gap: 15px;
     /* Dono buttons ke beech ka gap */
-    padding-right: 80px;
+    /* padding-right: 80px; */
+}
+.slider-controls2{
+     display: none;
+     width: 100%;
 }
 
 .nav-btn {
-    background-color: #e0d1c1;
+    background-color: #e0d1c1e8;
     /* Image wala Beige color */
     border: none;
     cursor: pointer;

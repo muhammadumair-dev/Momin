@@ -25,18 +25,21 @@
         <li><a href="#">Our Team</a></li>
         <li><a href="#">News</a></li>
       </ul>
-       <li class="hamburger">
-          <button aria-label="Menu" id="menuToggle">Menu</button>
-        </li>
+      <li class="hamburger">
+        <button aria-label="Menu" id="menuToggle">Menu</button>
+      </li>
 
-      <div class="logo"><img src="http://monin1912.com/cdn/shop/files/logo-monin-white.svg?v=1758094828&width=352" alt="img"></div>
+      <div class="logo"><img src="http://monin1912.com/cdn/shop/files/logo-monin-white.svg?v=1758094828&width=352"
+          alt="img"></div>
 
       <ul class="nav-right">
         <li><a href="#">Products &amp; Recipes</a></li>
         <li><a href="#">Where To Buy</a></li>
-        <li class="icon"><button aria-label="Search" class="btn-icon"><img src="/Momin//assets/serach.svg" alt=""></button></li>
-        <li class="icon"><button aria-label="Language" class="btn-icon"><img src="https://monin1912.com/cdn/shop/t/29/assets/picto-world.svg" alt=""></button></li>
-       
+        <li class="icon"><button aria-label="Search" class="btn-icon"><img src="/Momin//assets/serach.svg"
+              alt=""></button></li>
+        <li class="icon"><button aria-label="Language" class="btn-icon"><img
+              src="https://monin1912.com/cdn/shop/t/29/assets/picto-world.svg" alt=""></button></li>
+
       </ul>
     </nav>
   </header>
@@ -87,7 +90,9 @@
           <a href="#" class="btn-discover">DISCOVER</a>
         </div>
       </div>
-      <div class="content-right"  style="background-image: url(./assets/backdrink.png); background-repeat: no-repeat;background-size: cover ;"  ></div>
+      <div class="content-right"
+        style="background-image: url(./assets/backdrink.png); background-repeat: no-repeat;background-size: cover ;">
+      </div>
       <img class="product-image" src="./assets/drink.png" alt="Blueberry">
     </div>
 
@@ -108,7 +113,7 @@
     </div>
 
     <!-- Slide 3: Passion Fruit -->
-   
+
     <div class="slider-controls">
       <button class="control-btn prev">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -134,7 +139,7 @@
     <!-- Slider Main Viewport -->
     <div class="slider-wrapper" id="slider">
       <!-- Card 1 (Initial Big Div) -->
-      <div class="category-card card-sauce active " >
+      <div class="category-card card-sauce active ">
         <h3 class="card-title">La Sauce</h3>
         <img src="./assets/coco2.png" alt="Sauce" class="product-img">
       </div>
@@ -148,7 +153,7 @@
       <!-- Card 3 -->
       <div class="category-card card-sirop">
         <h3 class="card-title">Le Sirop</h3>
-        <img src="./assets/coco.png" alt="Syrup" class="product-img">
+        <img src="./assets/coco3.png" alt="Syrup" class="product-img">
       </div>
 
       <!-- Card 4 (Duplicate for loop feel) -->
@@ -169,7 +174,7 @@
     </div>
   </div>
 
-  <section class="world-section" >
+  <section class="world-section">
     <!-- Background decorative elements -->
     <div class="topo-overlay"></div>
     <div class="grid-line-v"></div>
@@ -217,8 +222,9 @@
     <h2 class="monin-header">Fresh Monin News</h2>
 
     <div class="monin-grid">
-      <button class="monin-btn monin-left" onclick="moninMove(-1)">&#8592;</button>
-      <button class="monin-btn monin-right" onclick="moninMove(1)">&#8594;</button>
+      <button class="monin-btn monin-left none" onclick="moninMove(-1)">&#8592;</button>
+      <button class="monin-btn monin-right none" onclick="moninMove(1)">&#8594;</button>
+
 
       <div class="monin-card">
         <img class="monin-img">
@@ -242,6 +248,19 @@
           <h3 class="monin-title"></h3>
           <p class="monin-subtitle"></p>
         </div>
+      </div>
+      
+      <div class="slider-controls2" >
+        <button class="control-btn prev" onclick="moninMove(-1)">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+        </button>
+        <button class="control-btn next" onclick="moninMove(1)">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
@@ -282,10 +301,9 @@
       <!-- Top Image -->
       <div class="card-image-wrapper">
         <!-- Using a representative high-quality stock photo of a barista/bartender -->
-        
+
         <!-- Using a representative high-quality stock photo of a barista/bartender -->
-        <img
-src="./assets/card-img.png"          alt="Professional mixologist at work" class="card-image">
+        <img src="./assets/card-img.png" alt="Professional mixologist at work" class="card-image">
       </div>
 
       <!-- Content Area -->
@@ -310,14 +328,13 @@ src="./assets/card-img.png"          alt="Professional mixologist at work" class
 
     </article>
 
- <article class="card">
+    <article class="card">
       <!-- Top Image -->
       <div class="card-image-wrapper">
         <!-- Using a representative high-quality stock photo of a barista/bartender -->
-        
+
         <!-- Using a representative high-quality stock photo of a barista/bartender -->
-        <img
-src="./assets/card-img2.png"          alt="Professional mixologist at work" class="card-image">
+        <img src="./assets/card-img2.png" alt="Professional mixologist at work" class="card-image">
       </div>
 
       <!-- Content Area -->
@@ -348,9 +365,7 @@ src="./assets/card-img2.png"          alt="Professional mixologist at work" clas
       <!-- Top Image -->
       <div class="card-image-wrapper">
         <!-- Using a representative high-quality stock photo of a barista/bartender -->
-        <img
-src="./assets/card-img3.png"
-          alt="Professional mixologist at work" class="card-image">
+        <img src="./assets/card-img3.png" alt="Professional mixologist at work" class="card-image">
       </div>
 
       <!-- Content Area -->
@@ -380,8 +395,7 @@ src="./assets/card-img3.png"
       <!-- Top Image -->
       <div class="card-image-wrapper">
         <!-- Using a representative high-quality stock photo of a barista/bartender -->
-        <img
-src="./assets/card-img4.png"          alt="Professional mixologist at work" class="card-image">
+        <img src="./assets/card-img4.png" alt="Professional mixologist at work" class="card-image">
       </div>
 
       <!-- Content Area -->
@@ -410,49 +424,49 @@ src="./assets/card-img4.png"          alt="Professional mixologist at work" clas
 
 
   </div>
- 
-    <footer class="monin-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <!-- Navigation Links -->
-                <nav class="links-grid">
-                    <a href="#">FAQ</a>
-                    <a href="#">Legal Notice</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Contact us</a>
-                </nav>
 
-                <!-- Copyright -->
-                <div class="footer-info">
-                    <p class="copyright">© 2026 Monin Incorporated. All right reserved</p>
-                </div>
-            </div>
+  <footer class="monin-footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Navigation Links -->
+        <nav class="links-grid">
+          <a href="#">FAQ</a>
+          <a href="#">Legal Notice</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact us</a>
+        </nav>
 
-            <!-- Brand Logo -->
-            <div class="logo-container">
-                <svg class="footer-logo-svg" viewBox="0 0 100 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Stylized teardrop logo paths -->
-                    <path d="M80 60C80 85 60 105 40 105C20 105 10 85 10 60C10 35 40 5 80 60Z" fill="url(#paint0_linear)"/>
-                    <defs>
-                        <linearGradient id="paint0_linear" x1="10" y1="60" x2="80" y2="60" gradientUnits="userSpaceOnUse">
-                            <stop offset="0" stop-color="#7B2C7F"/> <!-- Purple -->
-                            <stop offset="0.25" stop-color="#E13032"/> <!-- Red -->
-                            <stop offset="0.5" stop-color="#F39221"/> <!-- Orange -->
-                            <stop offset="0.75" stop-color="#EBC48F"/> <!-- Tan -->
-                            <stop offset="1" stop-color="#FFD100"/> <!-- Yellow -->
-                        </linearGradient>
-                    </defs>
-                    <!-- Slicing detail paths for that "leaf" look -->
-                    <path d="M78 58C78 58 65 65 40 105" stroke="#261608" stroke-width="1.5"/>
-                    <path d="M74 54C74 54 55 60 30 100" stroke="#261608" stroke-width="1.5"/>
-                    <path d="M68 50C68 50 45 55 20 90" stroke="#261608" stroke-width="1.5"/>
-                </svg>
-            </div>
+        <!-- Copyright -->
+        <div class="footer-info">
+          <p class="copyright">© 2026 Monin Incorporated. All right reserved</p>
         </div>
+      </div>
 
-        <!-- Watermark Background Text -->
-        <div class="footer-bg-text">MONIN</div>
-    </footer>
+      <!-- Brand Logo -->
+      <div class="logo-container">
+        <svg class="footer-logo-svg" viewBox="0 0 100 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Stylized teardrop logo paths -->
+          <path d="M80 60C80 85 60 105 40 105C20 105 10 85 10 60C10 35 40 5 80 60Z" fill="url(#paint0_linear)" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="10" y1="60" x2="80" y2="60" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#7B2C7F" /> <!-- Purple -->
+              <stop offset="0.25" stop-color="#E13032" /> <!-- Red -->
+              <stop offset="0.5" stop-color="#F39221" /> <!-- Orange -->
+              <stop offset="0.75" stop-color="#EBC48F" /> <!-- Tan -->
+              <stop offset="1" stop-color="#FFD100" /> <!-- Yellow -->
+            </linearGradient>
+          </defs>
+          <!-- Slicing detail paths for that "leaf" look -->
+          <path d="M78 58C78 58 65 65 40 105" stroke="#261608" stroke-width="1.5" />
+          <path d="M74 54C74 54 55 60 30 100" stroke="#261608" stroke-width="1.5" />
+          <path d="M68 50C68 50 45 55 20 90" stroke="#261608" stroke-width="1.5" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Watermark Background Text -->
+    <div class="footer-bg-text">MONIN</div>
+  </footer>
 
 
   <script src="script.js"></script>
