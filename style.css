@@ -608,20 +608,25 @@ body {
 
 /* Backgrounds with modern gradients mimicking the swirls */
 .card-sauce {
-background-image: url('/Momin/assets/image\ copy.png');
+/* background-image: url('/Momin/assets/image copy.png');
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
+background: linear-gradient(135deg, #667eea, #764ba2);
+
 
 }
 
 .card-cordial {
-background-image: url('/Momin/assets/image\ copy 2.png');
+background-image: url('/Momin/assets/image copy 2.png');
 background-size: cover;
 background-repeat: no-repeat;
+background: linear-gradient(to right, #ff512f, #dd2476);
+
 }
 
-.card-sirop {background-image: url('/Momin/assets/image\ copy 3.png');
-background-repeat: no-repeat;
+.card-sirop {
+    background: linear-gradient(to right, #56ab2f, #a8e063);
+
 /* height: 70vh; */
 }
 
@@ -716,11 +721,11 @@ background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     min-height: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('/Momin/assets/back.png');
-    /* Representative vineyard image */
+  
+   background-image:  url('./assets/balk.png');
+ 
     background-size: cover;
-    background-position: center;
+    background-position: center;  
     display: flex;
     align-items: center;
     justify-content: center;
