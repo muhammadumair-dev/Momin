@@ -53,14 +53,16 @@ html, body {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    /* font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; */
     color: var(--muted);
+    font-family: "Raleway" ,sans-serif;
+  /* color: #000; */
 
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    /* max-width: 1200px; */
     margin: 0 auto
 }
 
@@ -72,6 +74,7 @@ body {
     right: 0;
     z-index: 40;
     padding: 18px 0;
+    width: 100vw;
 
 
     background: transparent;
@@ -88,14 +91,16 @@ body {
 
 
     color: black;
+    /* background-color: #000; */
+    width: 100%;
 
 }
 
-.containern {
-    width: 95%;
+/* .containern {
+    width: 100%;
     justify-self: center;
 
-}
+} */
 
 .site-header.scrolled {
     background: white;
@@ -104,7 +109,7 @@ body {
 
 }
 .logo{
-    padding-left: 115px;
+    padding-left: 100px;
 }
 .nav-left,
 .nav-right {
@@ -151,10 +156,10 @@ body {
     
 }
 .logo , .logo2{
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 28px;
     color: #fff;
-    letter-spacing: 2px
+    /* letter-spacing: 2px */
 }
 
 .btn-icon {
@@ -201,6 +206,7 @@ body {
     color: #ffffff;
     font-weight: 500;
     font-size: 30px;
+
     border: none;
 }
 
@@ -226,7 +232,7 @@ body {
 }
 
 .year {
-    font-family: 'Playfair Display', serif;
+
     color: #f7efe6;
     font-weight: 700;
     font-size: clamp(64px, 18vw, 180px);
@@ -330,7 +336,7 @@ body {
 }
 
 .curved-text-svg text {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 14px;
     letter-spacing: 4px;
     font-weight: 500;
@@ -438,7 +444,7 @@ body {
 }
 
 .product-name {
-    font-family: 'Playball', cursive;
+    /* font-family: 'Playball', cursive; */
     font-size: 80px;
     margin-bottom: 10px;
     line-height: 1.1;
@@ -588,9 +594,9 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 200px;
     align-items: center;
-
+height: fit-content;
 
     justify-content: flex-start;    
     padding-top: 60px;
@@ -630,10 +636,7 @@ background: linear-gradient(to right, #ff512f, #dd2476);
 /* height: 70vh; */
 }
 
-.category-card img {
-    width: 100% ;
-    height: 400px;
-}
+
 
 .card-title {
     color: white;
@@ -650,23 +653,29 @@ background: linear-gradient(to right, #ff512f, #dd2476);
 }
 
 .product-img {
-    max-width: 140px;
+    width: 100%;
+    height:fit-content;    
+    /* background-color: #000; */
     filter: drop-shadow(10px 20px 15px rgba(0, 0, 0, 0.4));
     transition: transform 0.5s ease;
     z-index: 2;
 }
 
 .active .product-img {
-    max-width: 180px;
-    transform: scale(1.1);
+    /* max-width: 180px; */
+    /* transform: scale(1.1); */
 
 }
 
 .controls {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    width: 95%;
     /* Buttons ko right side karne ke liye */
-    margin-top: 30px;
+    margin-top: 0px;
+    position: relative; 
+    bottom: 94px;
+
     gap: 15px;
     /* Dono buttons ke beech ka gap */
     /* padding-right: 80px; */

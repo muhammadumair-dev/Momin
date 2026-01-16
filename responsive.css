@@ -15,7 +15,7 @@
         height: 130vh;
     }
     /* Header / Nav */
-
+ 
 
 
     .content-left,
@@ -86,10 +86,21 @@
         align-items: start;
         margin-top: 0px;
     }
- .nav{
 
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    color: black;
+    /* background-color: #000; */
     width: 90%;
- }
+    justify-self: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+
+}
 .btn-icon img {
 
     width: 20px;
@@ -99,14 +110,17 @@
     background-color: transparent;
     color: #ffffff;
     font-weight: 500;
-    font-size: 20px;}
+    margin-left:10px ;
+    font-size: 15px;}
  
  .logo{
     padding-left:50px ;
     display: flex;
 }
-.image1,.image2{
+.image1{
     width: 100px;
+}.image2{
+    width: 120px;
 }
 .container3{
     margin-top: 300px;
@@ -125,6 +139,11 @@
     height: 400px;
 }
 .none{display: none;}
+.controls{
+    /* background-color: red; */
+    margin-top: 150px;
+    justify-content: center;
+}
 }
 
 
@@ -212,6 +231,34 @@ align-items: center; top: 50px;}
         margin-top: 100px;
     }
         
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+/* background-color: red; */
+    color: black;
+    /* background-color: #000; */
+    width: 95%;
+    justify-self: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+
+}#menuToggle{
+    font-size: 20px;
+}
+.image1{
+    width: 100px;
+}.image2{
+    width: 120px;
+}
+.btn-icon img {
+
+    width: 20px;
+    height: 20px;
+}
+
+
 }
 
 /* ================== */
@@ -229,8 +276,7 @@ align-items: center; top: 50px;}
         height: 47%;
         justify-content: center;
     }
-
-    .product-image {
+ .product-image {
         height: 45%;
         top: 20%;
     }
@@ -242,6 +288,23 @@ align-items: center; top: 50px;}
     .hero {
         height: 60vh;
     }
+    .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    color: black;
+    /* background-color: #000; */
+    width: 90%;
+    justify-self: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+
+}
+#menuToggle{
+    font-size: 25px;
+}
 
     .slider-controls {
         top: 92%;
@@ -388,7 +451,7 @@ align-items: center; top: 50px;}
     .product-name {
         font-size: 50px;
     }
-    body{background-color: blue;}
+
 
     .containern,
     .container,
