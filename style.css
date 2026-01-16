@@ -614,24 +614,26 @@ height: fit-content;
 
 /* Backgrounds with modern gradients mimicking the swirls */
 .card-sauce {
-/* background-image: url('/Momin/assets/image copy.png');
+background-image: url('https://monin1912.com/cdn/shop/files/bg-categorie-sirop_df8e590d-43f6-4c27-9be0-e0ac8f1c6608.png?v=1758096467&width=3840');
 background-size: cover;
-background-repeat: no-repeat; */
-background: linear-gradient(135deg, #667eea, #764ba2);
+background-repeat: no-repeat;
+/* background: linear-gradient(135deg, #667eea, #764ba2); */
 
 
 }
 
 .card-cordial {
-background-image: url('/Momin/assets/image copy 2.png');
+background-image: url('https://monin1912.com/cdn/shop/files/Yellow_Pink_Green_Texture.png?v=1767890655&width=3840');
 background-size: cover;
 background-repeat: no-repeat;
-background: linear-gradient(to right, #ff512f, #dd2476);
+/* background: linear-gradient(to right, #ff512f, #dd2476); */
 
 }
 
 .card-sirop {
-    background: linear-gradient(to right, #56ab2f, #a8e063);
+    /* background: linear-gradient(to right, #56ab2f, #a8e063);
+     */
+     background-image: url('https://monin1912.com/cdn/shop/files/TEXTURE_RED_PINK.png?v=1760688018&width=3840');
 
 /* height: 70vh; */
 }
