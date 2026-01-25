@@ -1140,10 +1140,11 @@ color: #000;
     }
 }
 .link-list2{
-    display: none;
+
     justify-content: center;
     display: flex;
     flex-direction: column;
+        display: none;
     /* align-items: center; */
     gap: 10px;
 }

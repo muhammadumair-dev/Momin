@@ -1486,12 +1486,14 @@ background-repeat: no-repeat;
     }
 }
 .link-list2{
-    display: none;
+
     justify-content: center;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     gap: 10px;
+        display: none;
+        background-color: rebeccapurple;
 }
 .link-list2 .menu-link{
 
