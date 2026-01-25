@@ -12,19 +12,15 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
   <!-- Tip: place your hero image at `assets/hero.jpg` to replace the SVG placeholder -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
-
 
 <body>
   <header class="site-header">
-    <nav class="nav containern">
+    <nav class="nav container">
       <ul class="nav-left">
         <li><a href="#">Culture</a></li>
         <li><a href="#">Commitments</a></li>
@@ -40,20 +36,84 @@
 
       <div class="logo2"><img class="image2"
           src="https://monin1912.com/cdn/shop/files/logo-monin.svg?v=1758094827&width=352" alt="img">
-        </div>
+      </div>
 
       <ul class="nav-right">
-        <li><a href="#">Products &amp; Recipes</a></li>
+     <li class="nav-item-products">
+  <a href="#" class="nav-link">Products</a>
+
+   
+  <div class="product mega-menu-container">
+    <div class="mega-menu-content">
+
+      <!-- Products Column -->
+      <div class="menu-column">
+        <h3 class="column-title">PRODUCTS</h3>
+        <ul class="link-list">
+          <li><a href="pages/le-sirop.html" class="menu-link">Le Sirop</a></li>
+          <li><a href="pages/sugar-free.html" class="menu-link">Le Sirop - Sugar Free</a></li>
+          <li><a href="pages/le-concentre" class="menu-link">Le Concentré</a></li>
+          <li><a href="pages/pure-by-monin" class="menu-link">PURE by MONIN</a></li>
+          <li><a href="pages/le-fruit.html" class="menu-link">Le Fruit</a></li>
+          <li><a href="pages/le-mixeur.html" class="menu-link">Le Mixeur</a></li>
+          <li><a href="pages/la-sauce.html" class="menu-link">La Sauce</a></li>
+          <li><a href="pages/le-frappe.html" class="menu-link">Le Frappé</a></li>
+          <li><a href="pages/la-liqueur.html" class="menu-link">La Liqueur</a></li>
+        </ul>
+      </div>
+
+      <!-- Recipes Column -->
+      <div class="menu-column">
+        <h3 class="column-title">RECIPES</h3>
+        <ul class="link-list">
+          <li><a href="#hot-drinks" class="menu-link">Hot Drinks</a></li>
+          <li><a href="#cold-drinks" class="menu-link">Cold Drinks</a></li>
+          <li><a href="#alcoholic-cocktails" class="menu-link">Alcoholic Cocktails</a></li>
+          <li><a href="#non-alcoholic-cocktails" class="menu-link">Non Alcoholic Cocktails</a></li>
+        </ul>
+      </div>
+
+
+      <!-- Promo Card -->
+      <a href="#new-product" class="promo-card">
+        <div class="promo-text-side">
+          <span class="promo-tag">NEW PRODUCT</span>
+
+          <div class="promo-brand-title">
+            <span class="brand-small" >LE FRUIT DE MONIN</span>
+            <h2 class="product-name-script">Green Melon</h2>
+          </div>
+
+          <div class="discover-btn">DISCOVER</div>
+        </div>
+
+        <div class="promo-image-side">
+          <img src="/Momin/assets/mominsimg1.png" alt="">
+        </div>
+      </a>
+
+    </div>
+  </div>
+</li>
+
         <li><a href="#">Where To Buy</a></li>
-        <li class="icon"><button aria-label="Search" class="btn-icon"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+        <li class="icon"><button aria-label="Search" class="btn-icon"><i
+              class="fa-solid fa-magnifying-glass"></i></button></li>
         <li class="icon"><button aria-label="Language" class="btn-icon"><img
               src="https://monin1912.com/cdn/shop/t/29/assets/picto-world.svg" alt=""></button></li>
 
       </ul>
     </nav>
+ 
   </header>
+  
+ 
+
+
 
   <main>
+    
+    
     <section class="hero">
       <div class="overlay"></div>
       <div class="hero-inner container">
@@ -73,7 +133,46 @@
       </div>
     </section>
   </main>
+    <div class="nav-overlay" id="navMenu">
+        <header class="nav-header">
+            <div class="header-left">
+                <span id="closeBtn" class="close-text">Close</span>
+            </div>
+            <div class="header-center">
+                <!-- Replace with actual logo image -->
+                <h1 class="logo">Momin</h1>
+            </div>
+            <div class="header-right">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                <svg class="icon" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 3.33-3.56A15.65 15.65 0 0 0 7.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.34.16-2h4.68c.09.66.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+            </div>
+        </header>
 
+        <nav class="menu-list">
+            <a href="#" class="menu-item">Culture <span class="arrow">›</span></a>
+            <a href="#" class="menu-item">Commitments</a>
+            <a href="#" class="menu-item">Our Team</a>
+            <a href="#" class="menu-item">News <span class="arrow">›</span>
+              
+            </a>
+            <a href="#" class="menu-item menu-item2">Products & Recipes <span class="arrow">›</span>
+            <ul class="link-list2">
+          <li><a href="pages/le-sirop.html" class="menu-link">Le Sirop</a></li>
+          <li><a href="pages/sugar-free.html" class="menu-link">Le Sirop - Sugar Free</a></li>
+          <li><a href="pages/le-concentre" class="menu-link">Le Concentré</a></li>
+          <li><a href="pages/pure-by-monin" class="menu-link">PURE by MONIN</a></li>
+          <li><a href="pages/le-fruit.html" class="menu-link">Le Fruit</a></li>
+          <li><a href="pages/le-mixeur.html" class="menu-link">Le Mixeur</a></li>
+          <li><a href="pages/la-sauce.html" class="menu-link">La Sauce</a></li>
+          <li><a href="pages/le-frappe.html" class="menu-link">Le Frappé</a></li>
+          <li><a href="pages/la-liqueur.html" class="menu-link">La Liqueur</a></li>
+        </ul></a>
+            <a href="#" class="menu-item">Where To Buy</a>
+        </nav>
+    </div>
+
+    <!-- Navigation Overlay -->
+  
   <div class="top-nav-area">
     <svg class="curved-text-svg" viewBox="0 0 300 100">
       <path id="curve" fill="transparent" d="M 20 80 Q 150 20 280 80" />
@@ -137,6 +236,7 @@
     </div>
 
   </div>
+  
 
   <div class="container3">
     <!-- Header Section -->
@@ -150,18 +250,22 @@
       <!-- Card 1 (Initial Big Div) -->
       <div class="category-card card-sauce active ">
         <h3 class="card-title">La Sauce</h3>
-        <img src="https://monin1912.com/cdn/shop/files/MONINSugarFreeCaramelSyrupPackshotNEW_e67ceafd-75d5-424e-afd3-4aab29c18f05.png?v=1758158559&width=400" alt="Sauce" class="product-img">
+        <img
+          src="https://monin1912.com/cdn/shop/files/MONINSugarFreeCaramelSyrupPackshotNEW_e67ceafd-75d5-424e-afd3-4aab29c18f05.png?v=1758158559&width=400"
+          alt="Sauce" class="product-img">
       </div>
- <!-- Card 2 -->
+      <!-- Card 2 -->
       <div class="category-card card-cordial">
         <h3 class="card-title">PARAGON Cordials</h3>
-        <img src="https://monin1912.com/cdn/shop/files/LeConcentredeMONINLemonRantcho.png?v=1756281707&width=400" alt="Cordial" class="product-img">
+        <img src="https://monin1912.com/cdn/shop/files/LeConcentredeMONINLemonRantcho.png?v=1756281707&width=400"
+          alt="Cordial" class="product-img">
       </div>
 
       <!-- Card 3 -->
       <div class="category-card card-sirop">
         <h3 class="card-title">Le Sirop</h3>
-        <img src="https://monin1912.com/cdn/shop/files/LeFruitdeMONINYuzuPackshotNEW.png?v=1756353085&width=400" alt="Syrup" class="product-img">
+        <img src="https://monin1912.com/cdn/shop/files/LeFruitdeMONINYuzuPackshotNEW.png?v=1756353085&width=400"
+          alt="Syrup" class="product-img">
       </div>
 
 
@@ -470,7 +574,8 @@
     </div>
 
     <!-- Watermark Background Text -->
-    <div class="footer-bg-text"><img src="https://monin1912.com/cdn/shop/files/logo-monin-footer.svg?v=1758096238&width=3000" alt=""></div>
+    <div class="footer-bg-text"><img
+        src="https://monin1912.com/cdn/shop/files/logo-monin-footer.svg?v=1758096238&width=3000" alt=""></div>
   </footer>
 
 

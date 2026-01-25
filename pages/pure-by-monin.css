@@ -1,0 +1,9 @@
+.le-sirop-container {
+    font-family: 'Lato', sans-serif;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+    /* background-color: var(--background-color); */
+    min-height: 0vh;}

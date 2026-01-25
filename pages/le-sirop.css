@@ -1,0 +1,1144 @@
+/* Font Imports (Example: Google Fonts - Lato for a modern sans-serif look) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --primary-text-color: #333;
+  --secondary-text-color: #666;
+  --background-color: #f8f8f8;
+  --accent-color: #e0a000; /* A warm, inviting accent color */
+  
+    --bg-color: #ffffff;
+    --card-bg: #fdf8f5;
+    --text-main: #1a1a1a;
+    --text-secondary: #555555;
+    --border-color: #e0e0e0;
+    --font-primary: 'Montserrat', sans-serif;
+    --footer-bg: #261608;
+    /* Deep rich brown */
+    --footer-text: #ffffff;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+
+
+
+.le-sirop-container {
+  font-family: 'Lato', sans-serif;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  padding: 40px 0px;
+  /* background-color: var(--background-color); */
+  min-height: 100vh;
+  color: var(--primary-text-color);
+  /* background-color: #e0a000; */
+
+}
+
+.containern{
+    width: 100%;
+    /* max-width: 1200px; */
+
+    margin: 0 auto
+}
+
+/* Header / Nav */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    padding: 18px 0;
+    width: 100vw;
+
+background-color: #ffffff;
+
+    /* start ma transparent */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* align-it    ems: center; */
+
+
+    color: black;
+    /* background-color: #000; */
+    width: 95%;
+
+}
+
+/* .containern {
+    width: 100%;
+    justify-self: center;
+
+} */
+
+.logo{
+    justify-self: center;
+margin: 0;
+padding-bottom: 12px;
+   
+}
+.fa-solid {
+    /* font-size: 25px; */
+    font-size: 25px;
+}
+.nav-left,
+.nav-right {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center
+}
+
+.nav-left a,
+.nav-right a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0.95
+}
+
+
+
+.logo2{
+    margin: 0;
+
+ 
+padding-bottom: 10px;
+}
+
+.logo , .logo2{
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 28px;
+    color: #fff;
+ 
+    /* letter-spacing: 2px */
+}
+.logo2 img{
+  width: 100%;
+  height: 100%;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+
+    color: #000;
+    font-size: 18px;
+    display: flex;
+   
+    cursor: pointer;
+    text-align: center;
+    /* width: fit-content;
+    height: fit-content; */
+}
+
+.btn-icon img  {
+    /* background-color: #000000;    */
+
+ filter: brightness(0) invert(0);
+    width: 30px;
+    height: 30px;
+}
+.fa-magnifying-glass{
+    /* color: #fff; */
+   
+    width: 15px;
+    height: 15px;
+
+}
+
+.hamburger {
+    display: none;
+
+}
+.nav-item-products {
+  position: static; /* ❗ relative hatao */
+}
+
+.product {
+  position: fixed;
+  top: 68px;               /* navbar height */
+  right: 110px;
+  width: 70vw;
+  display: none;
+  z-index: 9999;
+
+}
+
+.product li a {
+    color: #000;
+}
+.nav-item-products:hover .product {
+  display: block;
+    opacity: 1;
+  pointer-events: auto;
+}
+.hide-image1 .image1 {
+  display: none;
+}
+
+
+.mega-menu-container {
+    
+  width: 80%;
+  /* position: relative; Keep relative, as inner elements might use it */
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  height: fit-content;
+  display: flex;
+  left: 100px;
+  display: none;
+  top: 70px;
+  justify-content: center;
+  /* display: none;  */
+  border-radius: 5px;
+  /*  */
+ 
+  z-index: 9999;
+  background: white;
+
+
+}
+
+
+.mega-menu-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.column-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  margin-bottom: 22px;
+}
+
+.menu-link li a {
+  text-decoration: none;
+ 
+  font-size: 18px;
+
+  font-weight: 400;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.menu-link:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+/* Promo Card Styling */
+.promo-card {
+  background-color: var(--promo-bg);
+
+  text-decoration: none;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+}
+
+.promo-text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.promo-tag {
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.brand-small {
+  display: block;
+  color: var(--monin-green);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.product-name-script {
+  font-family: 'Dancing Script', cursive;
+  color: var(--monin-green);
+  font-size: 54px;
+  margin: 0;
+  line-height: 1;
+}
+.promo-brand-title{
+    color: #000;
+}
+
+.discover-btn {
+  background-color: var(--monin-brown);
+  color: white;
+  width: fit-content;
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-top: 30px;
+}
+
+.promo-image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottle-img {
+  max-height: 380px;
+  width: auto;
+  filter: drop-shadow(15px 15px 20px rgba(0,0,0,0.15));
+  transition: transform 0.4s ease;
+  
+}
+
+.promo-card:hover .bottle-img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .mega-menu-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .promo-card {
+    grid-column: span 2;
+  }
+}
+
+
+
+
+
+
+.le-sirop-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 900px; /* Adjust as needed */
+  
+}
+
+.home-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: var(--secondary-text-color);
+}
+
+.header-title {
+  font-size: 18px;
+  align-items: center;
+  font-weight: 100;
+  color: var(--secondary-text-color);
+}
+
+.le-sirop-content {
+  /* text-align: center; */
+  /* background-color: #e0a000; */
+  max-width: 900px; /* Adjust as needed */
+}
+
+.main-title {
+  font-size: 80px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+color: #000;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 33px;
+
+  font-weight: ;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+
+/* Hover and Transition Effects (example for potential interactive elements if added later) */
+.le-sirop-container * {
+  transition: all 0.3s ease-in-out;
+}
+
+.le-sirop-container:hover {
+  /* Example: subtle background color change on container hover */
+  /* background-color: #f0f0f0; */
+}
+.hide-image1 .image1 {
+  display: none;
+}
+
+.hide-image1 .image1 {
+  display: none;
+}
+
+.site-header.text-black .fa-solid {
+
+  color: black;
+}
+
+.site-header.text-black .image2,
+.site-header.text-black .logo2 {
+    display: flex;
+}
+
+.site-header.text-black .nav-left a,
+.site-header.text-black .nav-right a {
+  color: black;
+}
+
+.site-header.text-black .logo {
+    display: none;
+}
+
+.site-header.text-black .btn-icon img,
+.site-header.text-black .btn-icon ,
+.site-header.text-black #menuToggle {
+    filter: brightness(0) invert(0);
+     color: black;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+   
+    justify-content: center;
+    margin-top: 100px;
+     margin-bottom: 100px;
+    
+}
+
+
+.card {
+    /* background: var(--bg-color); */
+    width: 310px;
+
+    display: flex;
+    flex-direction: column;
+    /* height: 610px; */
+    height: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Subtle hover effect for interactivity */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Top Image Section --- */
+.card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    /* Matches the vertical orientation of the reference */
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Content Section --- */
+.card-content {
+    padding: 40px 0;
+    /* Vertical spacing as per design */
+    display: flex;
+    /* width: 10%; */
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* --- Icon Styling --- */
+.card-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+
+/* --- Text Styling --- */
+.card-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--primary-text);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    /* Small adjustment to match the "wide" feel of the text */
+    max-width: 95%;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Toolbar Layout */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 15px;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dropdown-group {
+    display: flex;
+    gap: 10px;
+}
+
+.custom-dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.dropdown-btn:hover {
+    border-color: #999;
+}
+
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #333;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 10;
+    list-style: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dropdown-content li {
+    padding: 12px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.dropdown-content li:hover {
+    background-color: #f5f5f5;
+}
+
+.custom-dropdown.active .dropdown-content {
+    display: block;
+}
+
+.clear-btn {
+    background: none;
+    border: none;
+    font-size: 11px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 100px; /* Aligns roughly under buttons */
+}
+
+/* Sort Section */
+.sort-section {
+    display: flex;
+    align-items: center;
+}
+
+.sort-dropdown select {
+    appearance: none;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    padding: 8px 40px 8px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 10px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px; /* Creates the thin separation line look */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.product-card {
+    background-color: var(--card-bg);
+    /* background-color: #000; */
+    aspect-ratio: 1 / 1.1; /* Slightly taller than square */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    width: 550px;
+    margin-top: 50px;
+
+}
+
+.product-card:hover {
+    filter: brightness(0.98);
+}
+
+.image-wrapper {
+    position: relative;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottle-img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    z-index: 2;
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.05));
+}
+
+/* Vertical blurred shadow behind the bottle as seen in image */
+.bottle-shadow {
+    position: absolute;
+    width: 40px;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.2);
+    right: -25px;
+    bottom: 0;
+    filter: blur(25px);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-group {
+        flex-wrap: wrap;
+    }
+
+    .clear-btn {
+        padding-left: 0;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.monin-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 80px 0 0 0;
+    /* No bottom padding because of the large text */
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+    /* Keep content above background text */
+    flex-wrap: wrap;
+}
+
+/* --- Links Layout --- */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex: 1;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px 100px;
+    justify-content: flex-start;
+}
+
+.links-grid a {
+    color: var(--footer-text);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+    opacity: 0.9;
+}
+
+.links-grid a:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.copyright {
+    color: var(--footer-text-muted);
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* --- Logo Styling --- */
+.logo-container {
+    flex-shrink: 0;
+    margin-top: -20px;
+}
+
+.footer-logo-svg {
+    width: 140px;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* --- Large Background Text --- */
+.footer-bg-text {
+    position: absolute;
+    bottom: -0.15em;
+    /* Partially cropped as in design */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(100px, 28vw, 450px);
+    font-weight: 900;
+    color: var(--watermark-color);
+    letter-spacing: 0.05em;
+    line-height: 0.8;
+    pointer-events: none;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.nav-item-products {
+  position: static; /* ❗ relative hatao */
+}
+
+.product {
+  position: fixed;
+  top: 68px;               /* navbar height */
+  right: 110px;
+  width: 70vw;
+  display: none;
+  z-index: 9999;
+
+}
+
+.product li a {
+    color: #000;
+}
+.nav-item-products:hover .product {
+  display: block;
+    opacity: 1;
+  pointer-events: auto;
+}
+.hide-image1 .image1 {
+  display: none;
+}
+
+
+.mega-menu-container {
+    
+  width: 80%;
+  /* position: relative; Keep relative, as inner elements might use it */
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Montserrat', sans-serif;
+  height: fit-content;
+  display: flex;
+  left: 100px;
+  display: none;
+  top: 70px;
+  justify-content: center;
+  /* display: none;  */
+  border-radius: 5px;
+  /*  */
+ 
+  z-index: 9999;
+  background: white;
+
+
+}
+
+
+.mega-menu-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.column-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  margin-bottom: 22px;
+}
+
+.menu-link li a {
+  text-decoration: none;
+ 
+  font-size: 18px;
+
+  font-weight: 400;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.menu-link:hover {
+  color:black;
+  text-decoration: underline;
+}
+
+/* Promo Card Styling */
+.promo-card {
+  background-color: var(--promo-bg);
+
+  text-decoration: none;
+  display: flex;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+}
+
+.promo-text-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.promo-tag {
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.brand-small {
+  display: block;
+  color: var(--monin-green);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.product-name-script {
+  font-family: 'Dancing Script', cursive;
+  color: var(--monin-green);
+  font-size: 54px;
+  margin: 0;
+  line-height: 1;
+}
+.promo-brand-title{
+    color: #000;
+}
+
+.discover-btn {
+  background-color: var(--monin-brown);
+  color: white;
+  width: fit-content;
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-top: 30px;
+}
+
+.promo-image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottle-img {
+  max-height: 380px;
+  width: auto;
+  filter: drop-shadow(15px 15px 20px rgba(0,0,0,0.15));
+  transition: transform 0.4s ease;
+  
+}
+
+.promo-card:hover .bottle-img {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+#menuToggle {
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+
+    border: none;
+}
+
+
+/*  */
+.fex{
+    justify-content: start;
+    padding-left: 80px;
+}
+/* Language button */
+.language {
+    position: fixed;
+    right: 18px;
+    bottom: 0px;
+    z-index: 30;
+}
+
+.lang-btn {
+    /* background: #a80e0e; */
+    border: none;
+    padding: 8px 12px;
+    /* border-radius: 6px;   */
+    color: #222;
+    font-weight: 600;
+    cursor: pointer
+}
+/*  */
+
+/* Fullscreen Overlay */
+.nav-overlay {
+    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 1000;
+ 
+    display: flex;
+
+    flex-direction: column;
+    display: none;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    /* transform: translateY(-100%); Initially hidden off-top */
+}
+
+/* Show class for JS */
+.nav-overlay.active {
+    transform: translateY(0);
+}
+
+/* Header Section */
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.close-text {
+    font-size: 14px;
+    color: #888;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.logo {
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #3d2616;
+    font-weight: 800;
+}
+
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: #3d2616;
+    cursor: pointer;
+}
+
+/* Menu List Section */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #3d2616; /* Dark Brownish color */
+    font-size: 22px;
+    font-weight: bold;
+    padding: 18px 0;
+    border-bottom: 1px solid transparent; /* Keeps spacing consistent */
+}
+
+.menu-item:hover {
+    color: #6d4125;
+}
+
+.arrow {
+    font-size: 24px;
+    color: #3d2616;
+    font-weight: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .menu-item {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+}
+.link-list2{
+    display: none;
+}

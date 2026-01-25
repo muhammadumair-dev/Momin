@@ -142,3 +142,28 @@ window.addEventListener('scroll', () => {
   const bg = document.querySelector('.image-container');
   bg.style.backgroundPositionY = (scrolled * 0.1) + 'px';
 });
+// 
+let menu = document.getElementById('menuToggle');
+let overlay = document.querySelector('.nav-overlay');
+const navMenu = document.getElementById('navMenu');
+const closeBtn = document.getElementById('closeBtn');
+
+
+
+menu.addEventListener('click', () => {
+  overlay.style.display = "flex";
+});
+closeBtn.addEventListener('click', () => {
+  overlay.style.display = "none";
+});
+navMenu.addEventListener('click', (e) => {
+    if (e.target === navMenu) {
+        navMenu.classList.remove('active');
+    }
+});
+
+let menuitem = document.querySelector('.menu-item2');
+let link= document.querySelector('.link-list2');
+menuitem.addEventListener('click', () => {
+  link.style.display = "inline";
+});
