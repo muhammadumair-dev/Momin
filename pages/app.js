@@ -89,7 +89,9 @@ navMenu.addEventListener('click', (e) => {
     }
 });
 let menuitem = document.querySelector('.menu-item2');
-let link= document.querySelector('.link-list2');
-menuitem.addEventListener('click', () => {
-  link.style.display = "inline";
+let link = document.querySelector('.link-list2');
+menuitem.addEventListener('click', (e) => {
+  e.preventDefault();
+  link.classList.toggle('active');
+  menuitem.classList.toggle('expanded');
 });

@@ -7,7 +7,7 @@
     --white: #ffffff;
     --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     --monin-brown: #2e1a05;
-    --monin-font: 'Montserrat', sans-serif;
+    --monin-font: 'Inter', sans-serif;
     --monin-dark-btn: #1a1411;
     --monin-bg: #ffffff;
     --monin-transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -94,7 +94,7 @@ body {
 
     color: black;
     /* background-color: #000; */
-    width: 100%;
+    width: 90%;
 
 }
 
@@ -763,7 +763,7 @@ background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
     color: var(--white);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-top: 80px;
     
  overflow: hidden;
@@ -1214,7 +1214,7 @@ background-repeat: no-repeat;
   /* position: relative; Keep relative, as inner elements might use it */
   background-color: #ffffff;
   padding: 60px 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   height: fit-content;
   display: flex;
   left: 100px;
