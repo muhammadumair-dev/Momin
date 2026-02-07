@@ -613,6 +613,11 @@ body {
   justify-content: center;
 }
 
+#product-card {
+    background-image: url('https://monin1912.com/cdn/shop/files/5.png?v=1731602995&width=480');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
 .product-card {
   background-color: var(--card-bg);
   /* background-color: #000; */
@@ -623,9 +628,18 @@ body {
   align-items: center;
   padding: 40px;
   transition: transform 0.3s ease;
+
   cursor: pointer;
   width: 550px;
   margin-top: 50px;
+}
+
+/* Ensure background image displays nicely behind the bottle */
+.product-card {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: transparent;
 }
 
 .product-card:hover {
